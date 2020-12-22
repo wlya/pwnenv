@@ -20,6 +20,12 @@ git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 ./setup.sh
 cd ~/
+## install gef
+cd ~/
+git clone https://github.com/hugsy/gef
+cd ~/
+
+## 
 
 #setup tools
 pip3 install -U setuptools
@@ -36,7 +42,7 @@ function gdba(){
     gdb $@
 }
 function gdbf(){
-    echo "source ~/.gdbinit-gef.py" > ~/.gdbinit
+    echo "source ~/gef/gef.py" > ~/.gdbinit
     gdb $@
 }
 function gdbpwn(){
