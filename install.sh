@@ -1,5 +1,6 @@
 sudo apt install -y gdb gcc g++ python3 python3-pip build-essential  python3-dev git libssl-dev libffi-dev 
-
+ln -s /usr/bin/python3 /usr/bin/python
+ln -s /usr/bin/pip3 /usr/bin/pip
  
 #pip configure
 mkdir ~/.pip 
@@ -15,6 +16,7 @@ cd ~/
 git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 ./setup.sh
+cd ~/
 
 #setup tools
 pip3 install -U setuptools
