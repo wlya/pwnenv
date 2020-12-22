@@ -12,6 +12,9 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 trusted-host=mirrors.aliyun.com
 EOT
 
+pip3 install capstone
+pip3 install ropgadget
+## install pwndbg
 cd ~/
 git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
@@ -23,7 +26,7 @@ pip3 install -U setuptools
 pip3 install --upgrade pip
 pip3 install --upgrade pwntools
 
-
+# install peda
 git clone https://github.com/longld/peda.git ~/peda
 wget -O ~/.gdbinit-gef.py -q http://gef.blah.cat/py
 
