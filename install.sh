@@ -1,4 +1,4 @@
-sudo apt install gdb gcc g++ python3 python3-pip build-essential  python3-dev git libssl-dev libffi-dev 
+sudo apt install -y gdb gcc g++ python3 python3-pip build-essential  python3-dev git libssl-dev libffi-dev 
 
  
 #pip configure
@@ -20,3 +20,24 @@ cd pwndbg
 pip3 install -U setuptools
 pip3 install --upgrade pip
 pip3 install --upgrade pwntools
+
+
+git clone https://github.com/longld/peda.git ~/peda
+wget -O ~/.gdbinit-gef.py -q http://gef.blah.cat/py
+
+cat <<EOT >> ~/.bashrc
+function gdba(){
+    echo "source ~/peda/peda.py" > ~/.gdbinit
+    gdb $@
+}
+function gdbf(){
+    echo "source ~/.gdbinit-gef.py" > ~/.gdbinit
+    gdb $@
+}
+function gdbpwn(){
+    echo "source ~/peda/peda.py" > ~/.gdbinit
+    gdb $@
+}
+EOT
+
+
