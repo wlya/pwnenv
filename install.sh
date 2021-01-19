@@ -12,6 +12,8 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 [install]
 trusted-host=mirrors.aliyun.com
 EOT
+pip3 config set global.index-url https://mirrors.aliyun.com/pypi/simple/
+
 
 pip3 install capstone
 pip3 install ropgadget
