@@ -1,5 +1,6 @@
-alias por='export http_proxy="http://127.0.0.1:1089/" https_proxy="http://127.0.0.1:1089/" && '
-alias ppor='export http_proxy="" https_proxy="" && '
+alias por='export http_proxy="http://127.0.0.1:1081/" https_proxy="http://127.0.0.1:1081/"'
+alias ppor='export http_proxy="" https_proxy=""'
+export http_proxy="http://127.0.0.1:1081/" https_proxy="http://127.0.0.1:1081/"
 
 sudo apt install -y gdb gcc g++ python3 python3-pip build-essential  python3-dev git libssl-dev libffi-dev 
 ln -s /usr/bin/python3 /usr/bin/python
