@@ -41,7 +41,7 @@ pip3 install --upgrade pwntools
 
 # install peda
 git clone https://github.com/longld/peda.git ~/peda
-wget -O ~/.gdbinit-gef.py -q http://gef.blah.cat/py
+wget -O ~/gef.py -q http://gef.blah.cat/py
 
 cat <<EOT >> ~/.bashrc
 function gdba(){
