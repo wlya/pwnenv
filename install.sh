@@ -10,9 +10,9 @@ pip uninstall -y enum34
 #pip configure
 mkdir ~/.pip 
 touch ~/.pip/pip.conf 
-cat <<EOT >> ~/.pip/pip.conf
+[ ! -f ~/.pip/pip.conf ] &&cat <<EOT >> ~/.pip/pip.conf
 [global]
-index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+index-url = https://mirrors.aliyun.com/pypi/simple/
 [install]
 trusted-host=mirrors.aliyun.com
 EOT
