@@ -25,8 +25,10 @@ EOT
 pip3 config set global.index-url https://mirrors.aliyun.com/pypi/simple/
 
 
+
 pip3 install capstone
 pip3 install ropgadget
+pip3 install cemu
 ## install pwndbg
 cd ~/
 git clone https://github.com/pwndbg/pwndbg
